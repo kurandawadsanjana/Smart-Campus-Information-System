@@ -65,5 +65,5 @@ The Smart Campus Information System is a web-based application developed using H
 
 ## Developed By
 
-Sanjana M Kurandawad
+Sanjana M Kurandawad                                                                                                                                              
 Sanjana Alur
