@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Campus Information System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Smart Campus Information System</h1>
+        <p>Python Lab Mini Project</p>
+    </header>
+
+    <nav>
+    <a href="#q1">Q1</a>
+    <a href="#q2">Q2</a>
+    <a href="#q3">Q3</a>
+    <a href="#q4">Q4</a>
+    <a href="#q5">Q5</a>
+    <a href="#q6">Q6</a>
+    <a href="#q7">Q7</a>
+    <a href="#q8">Q8</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to Smart Campus Information System</h2>
+
+    <p>
+        A web-based platform integrating student
+        management, academic records, analytics,
+        enrollment and campus services.
+    </p>
+</section>
+
+<section class="hero">
+
+<h2>Project Objective</h2>
+
+<p>
+The Smart Campus Information System integrates
+student registration, enrollment management,
+academic records, event participation,
+performance analytics and campus administration
+into a unified web application.
+</p>
+
+</section>
+
+<div class="stats">
+
+    <div class="stat-box">
+        <h2>8</h2>
+        <p>Modules</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>100%</h2>
+        <p>Integrated</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>1</h2>
+        <p>Smart System</p>
+    </div>
+
+</div>
+
+    <div class="container">
+
+        <div class="card" id="q1"></div>
+
+            <h2>Q1</h2>
+            <p>Student Registration & Grade Evaluation</p>
+
+            <input type="text" id="studentName" placeholder="Enter Student Name">
+
+            <br><br>
+
+            <input type="number" id="studentMarks" placeholder="Enter Marks">
+
+            <br><br>
+
+            <button onclick="evaluateGrade()">
+                Evaluate
+            </button>
+
+            <p id="result"></p>
+
+        </div>
+
+        <div class="card" id="q2">
+
+    <h2>Q2</h2>
+    <p>Course Enrollment Management</p>
+
+    <input type="text" id="courseName"
+           placeholder="Course Name">
+
+    <br><br>
+
+    <input type="number" id="courseCredits"
+           placeholder="Credits">
+
+    <br><br>
+
+    <button onclick="addCourse()">
+        Add Course
+    </button>
+
+    <p id="courseOutput"></p>
+
+</div>
+
+        <div class="card" id="q3">
+
+    <h2>Q3</h2>
+    <p>Student Records Management</p>
+
+    <input type="text"
+           id="recordName"
+           placeholder="Student Name">
+
+    <br><br>
+
+    <input type="number"
+           id="recordAge"
+           placeholder="Age">
+
+    <br><br>
+
+    <input type="text"
+           id="recordGrades"
+           placeholder="Grades (Example: 85,90,78)">
+
+    <br><br>
+
+    <button onclick="addStudentRecord()">
+        Add Record
+    </button>
+    <hr>
+
+<h3>Event Participation Analysis</h3>
+
+<input type="text"
+       id="eventA"
+       placeholder="Event A Participants (comma separated)">
+
+<br><br>
+
+<input type="text"
+       id="eventB"
+       placeholder="Event B Participants (comma separated)">
+
+<br><br>
+
+<button onclick="analyzeEvents()">
+    Analyze Events
+</button>
+
+<p id="eventOutput"></p>
+
+    <p id="recordOutput"></p>
+
+</div>
+
+        <div class="card" id="q4">
+
+    <h2>Q4</h2>
+    <p>Search & Sort Student IDs</p>
+
+    <input type="text"
+           id="studentIds"
+           placeholder="Example: 105,102,110,108">
+
+    <br><br>
+
+    <button onclick="sortIds()">
+        Sort IDs
+    </button>
+
+    <br><br>
+
+    <input type="number"
+           id="searchId"
+           placeholder="Enter ID to Search">
+
+    <br><br>
+
+    <button onclick="searchId()">
+        Search ID
+    </button>
+
+    <p id="sortResult"></p>
+
+</div>
+
+        <div class="card" id="q5">
+
+    <h2>Q5</h2>
+    <p>Fee Calculator</p>
+
+    <input type="number"
+           id="tuitionFee"
+           placeholder="Tuition Fee">
+
+    <br><br>
+
+    <input type="number"
+           id="hostelFee"
+           placeholder="Hostel Fee">
+
+    <br><br>
+
+    <input type="number"
+           id="transportFee"
+           placeholder="Transport Fee">
+
+    <br><br>
+
+    <button onclick="calculateFee()">
+        Calculate Fee
+    </button>
+
+    <p id="feeResult"></p>
+
+</div>
+
+        <div class="card" id="q6">
+    <h2>Q6</h2>
+    <p>Academic Records</p>
+
+    <input type="number"
+           id="academicId"
+           placeholder="Student ID">
+
+    <br><br>
+
+    <input type="text"
+           id="academicName"
+           placeholder="Student Name">
+
+    <br><br>
+
+    <input type="number"
+           id="academicMarks"
+           placeholder="Marks">
+
+    <br><br>
+
+    <button onclick="addAcademicRecord()">
+        Add Record
+    </button>
+
+    <button onclick="generateReport()">
+        Generate Report
+    </button>
+
+    <p id="academicOutput"></p>
+
+</div>
+
+        <div class="card" id="q7">
+
+    <h2>Q7</h2>
+    <p>Directory Scanner</p>
+
+    <textarea id="directoryInput"
+              rows="6"
+              placeholder="Enter file names separated by commas"></textarea>
+
+    <br><br>
+
+    <button onclick="scanDirectory()">
+        Scan Directory
+    </button>
+
+    <p id="directoryOutput"></p>
+
+</div>
+
+        <div class="card analytics-card" id="q8"></div>
+
+    <h2>Q8</h2>
+    <p>Performance Analytics</p>
+
+    <input type="text"
+           id="studentNameAnalytics"
+           placeholder="Student Name">
+
+    <br><br>
+
+    <input type="number"
+           id="mathMarks"
+           placeholder="Math Marks">
+
+    <br><br>
+
+    <input type="number"
+           id="scienceMarks"
+           placeholder="Science Marks">
+
+    <br><br>
+
+    <input type="number"
+           id="englishMarks"
+           placeholder="English Marks">
+
+    <br><br>
+
+    <button onclick="addPerformanceRecord()">
+        Add Student
+    </button>
+
+    <button onclick="analyzePerformance()">
+        Analyze Performance
+    </button>
+
+    <p id="analyticsResult"></p>
+
+    <canvas id="marksChart"></canvas>
+
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <p id="studentCount"></p>
+</body>
+
+<footer>
+    <p>
+        Smart Campus Information System
+        | Developed by Sanjana
+    </p>
+</footer>
+
+</html>

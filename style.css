@@ -1,0 +1,119 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    margin-bottom:20px;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    transition:0.3s;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:5px 0;
+    box-sizing:border-box;
+}
+
+button{
+    background:#003366;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0055aa;
+}
+
+textarea{
+    width:80%;
+    padding:10px;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+nav{
+    background:#0055aa;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.hero{
+    text-align:center;
+    padding:40px;
+    background:white;
+    margin:20px;
+    border-radius:10px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin:20px;
+}
+
+.stat-box{
+    background:white;
+    padding:20px;
+    width:180px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.analytics-card{
+    border:3px solid #0055aa;
+}
+
+.card h2,
+.card p{
+    text-align:center;
+}
+
+.card input,
+.card button,
+.card textarea{
+    display:block;
+    margin:10px auto;
+}
